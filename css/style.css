@@ -1,4 +1,8 @@
+:root {
+  --bebas-neue: 'Archivo Black', sans-serif;
+  --concert-one: 'Concert One', cursive;
 
+}
 
 * {
   box-sizing: border-box;
@@ -11,6 +15,14 @@ h3,
 h4,
 p{
   margin: 0;
+  
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-family: var(--concert-one)
 }
 
 img,
@@ -33,7 +45,6 @@ body {
   background-color: gray;
   margin: 0 auto;
   /* background-image: url("/img/dark-texture-in-watercolor.jpg"); */
-  font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -79,6 +90,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 1rem;
 }
 
 .greeting{
@@ -109,24 +121,27 @@ body {
   color: red;
 }
 
-.portfolio-imag {
+.portfolio-img {
   position: relative;
+  
 }
 
 .my-presentation-photo{
   width: 50%;
   aspect-ratio: 2 / 1.25;
   object-fit: contain;
-  position: absolute;
+  position: absolute; 
   left: 50%;
-  top: 0px;
-  z-index: -1;
+  top: -300px; 
+  z-index: -1; 
+  clip-path: circle(120px at center);
 } 
 
 .second-section{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));;
   gap: .75rem;
+  padding: 1rem;
 }
 
 .submit-button.active {
@@ -134,11 +149,13 @@ body {
 }
 .project__container {
     margin: 2rem 0;
+    padding: 1rem;
 }
 .third-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));;
   gap: .75rem;
+  padding: 1rem;
 }
 
 .projects__information{
@@ -191,10 +208,15 @@ body {
 
 .footer{
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));; */
+  /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */ 
   grid-template-columns: 1fr 1fr;
   gap: .25rem;
   margin-top: 2rem;
+}
+.footer__description {
+  font-size: 1rem;
+  padding: .25rem;
+  background-color: red;
 }
 
 .footer__tittle {
@@ -203,25 +225,13 @@ body {
   padding-bottom: 2rem;
 }
 
-.footer__description {
-  font-size: 1rem;
-  
-}
-
-
-.footer__description {
-  padding: .25rem;
-  
-}
-
  .form-registration{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
- 
   padding: 1.25rem;
+  background-color: red;
 }
 
 input, button {
@@ -230,8 +240,13 @@ input, button {
   appearance: none;
   background: none;
 }
+
+.form-input-container {
+  padding-top: .50rem;
+}
 .form-label{
   color: whitesmoke;
+  padding-left: 1rem;
 }
 .form-input{
   font-size: 1rem;
@@ -280,3 +295,82 @@ input, button {
   grid-column: span 3;
 }
 
+@media screen and (max-width: 764px){
+  .nav-menu h2 {
+    font-size: 2.5rem;
+  }
+
+  .nav-img {
+    width: 40px;
+  }
+
+  .greeting{
+    font-size: 5rem;
+    width: 500px;
+    margin-bottom: 2rem;
+  }
+
+  .my-description {
+    font-size: 1.5rem;
+  }
+
+  .contact-button{
+    font-size: 1.5rem;
+  }
+
+  .my-presentation-photo {
+    left: 350px;
+    top: -500px;
+    width: 40%;
+    aspect-ratio: 1.25 / 1.25;
+    clip-path: circle(130px at center);
+  }
+  
+  .exp-container {
+    background-color: red;
+    padding: 1.5rem;
+  }
+
+  .exp-container-tittle {
+    font-size: 3rem;
+  }
+
+  .exp-container-description {
+    font-size: 1.5rem;
+  }
+
+  .projects__information {
+    background-color: red;
+    padding: 1rem;
+  }
+
+  .project__tittle {
+    font-size: 5rem;
+  }
+
+  .project__contact {
+    font-size: 2rem;
+  }
+
+  .card-tittle {
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+
+ .footer {
+    
+    grid-template-columns: 1fr;
+    background-color: blueviolet;
+  }
+
+  .footer__description {
+    grid-column: span 3;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+  } 
+}
