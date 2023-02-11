@@ -1,6 +1,7 @@
 :root {
-  --bebas-neue: 'Archivo Black', sans-serif;
+  --bai-jamjuree: 'Bai Jamjuree', sans-serif;
   --concert-one: 'Concert One', cursive;
+  --merienda: 'Merienda', cursive;
 
 }
 
@@ -23,6 +24,10 @@ h2,
 h3,
 h4{
   font-family: var(--concert-one)
+}
+
+p, a{
+  font-family: var(--merienda);
 }
 
 img,
@@ -208,8 +213,7 @@ body {
 
 .footer{
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */ 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); 
   gap: .25rem;
   margin-top: 2rem;
 }
@@ -232,6 +236,7 @@ body {
   align-items: center;
   padding: 1.25rem;
   background-color: red;
+  font-family: var(--bai-jamjuree)
 }
 
 input, button {
@@ -239,6 +244,7 @@ input, button {
   outline: none;
   appearance: none;
   background: none;
+  font-family: var(--bai-jamjuree)
 }
 
 .form-input-container {
@@ -254,6 +260,7 @@ input, button {
   width: 300px;
   color: white;
   border-radius: 1rem;
+  
 
 }
 
@@ -266,7 +273,7 @@ input, button {
 .form-btn {
  
   margin-top: 2rem;
-  margin-left: 9rem;
+  margin-left: 8rem;
   /* padding: 1rem;
   width: 120px; */
   border-radius: 1rem;
@@ -284,6 +291,7 @@ input, button {
   padding: 1rem;
   width: 170px;
   cursor: pointer;
+  
 }
 
 
@@ -325,7 +333,6 @@ input, button {
     aspect-ratio: 1.25 / 1.25;
     clip-path: circle(130px at center);
   }
-  
   .exp-container {
     background-color: red;
     padding: 1.5rem;
@@ -363,14 +370,68 @@ input, button {
 
  .footer {
     
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     background-color: blueviolet;
   }
 
   .footer__description {
     grid-column: span 3;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     background-color: aqua;
+    width: 400px;
+    margin: 0 auto;
   } 
+
+  .form-registration {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 522px){
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+    .first-section{
+      align-items: center;
+    }
+    .greeting{
+      font-size: 3rem;
+      width: 90%;
+      padding-top: 3rem;
+    }
+
+    .my-description{
+      font-size: 1.2rem;
+      width: 90%;
+    }
+    .contact-button{
+      font-size: 1.2rem;
+    }
+
+    .my-presentation-photo{
+      top: 50px;
+    }
+    .second-section{
+      justify-items: center;
+    }
+
+    .exp-container-tittle {
+      font-size: 2rem;
+    }
+  
+    .exp-container-description {
+      font-size: 1rem;
+    }
+
+    .project__tittle {
+      font-size: 3rem;
+    }
+  
+    .project__contact {
+      font-size: 1.5rem;
+    }
+    
+  }
 }
