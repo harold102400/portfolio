@@ -5,150 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Concert+One&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,700&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
-    <script src="/components/app.js" defer></script>
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/contact-us.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Permanent+Marker&family=Rampart+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/programmer_icon.png">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/4c30fe5dfc.js" crossorigin="anonymous"></script>
+    <script src="/components/popupButton.js" defer></script>
+    <script src="/components/formValidation.js" defer></script>
+    <script src="/components/scroll.js" defer></script>
+    <script src="/components/scrollTop.js" defer></script>
+    <title>Harold.Dev</title>
 </head>
 <body>
     <header>
         <nav class="nav-menu">
             <div>
-                <h2>haroldmontes</h2>
+                <h2 class="nav-title">hm.dev</h2>
             </div>
 
             <ul class="social-media">
                 <li>
-                    <a href="#" class="nav-link"><img src="./img/icons8-github.svg" class="nav-img"></a>
+                    <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link"><img src="./img/icons8-facebook.svg" class="nav-img"></a>
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link"><img src="./img/icons8-twitter(1).svg" class="nav-img"></a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link"><img src=".img/icons8-linkedin-circled.svg" class="nav-img"></a>
+                    <a href="#contact-us" class="nav-link">Contact me</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <article class="container">
-            <section class="first-section">
-                <h1 class="greeting">Nice to meet you! I'm Harold Montes</h1>
-                <p class="my-description">I am from dominican republic and I am a frontend Developer</p>
-                <div class="contact-button">
-                   <a href="#" class="contact-btn">Contact me</a>
+            <section>
+                <button class="go-top-btn">
+                    <i class="fa-solid fa-arrow-up fa-bounce fa-2xl"></i>
+                  </button>
+            </section>
+            <section>
+                <h1 class="greeting-title">Hi, I'm Harold | Sofware Developer</h1>
+            </section>
+            <section class="section-one">
+                <div class="my-info">
+                    
+                    
+                    <nav class="container-icons">
+                        <p class="my-description">Hi There, I'm Harold Montes. I'm very hardworking, dedicated, and responsible, and I love programming and learning new things.</p>
+                        
+            
+                        <ul class="social-media-icons">
+                            <li>
+                                <a href="https://github.com/harold102400/"><box-icon type='logo' name='github' size="lg" animation="tada-hover"></box-icon></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/harold-montes-de-oca/"><box-icon type='logo' name='linkedin' size="lg" animation="tada-hover"></box-icon></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="portfolio-img">
-                    <img src="img/FullSizeRender.JPEG" class="my-presentation-photo">
+                    <img src="./img/Mar-Business_2.jpg" class="ilustraction-img">
                 </div>
            <!--      <hr> -->
             </section>
-            <section class="second-section">
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">HTML</h2>
-                    <p class="exp-container-description">4 years Experience</p>
-                </div>
 
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">CSS</h2>
-                    <p class="exp-container-description">4 years Experience</p>
-                </div>
-
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">JAVASCRIPT</h2>
-                    <p class="exp-container-description">4 years Experience</p>
-                </div>
-
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">REACT</h2>
-                    <p>3 years Experience</p>
-                </div>
-
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">REACT</h2>
-                    <p class="exp-container-description">3 years Experience</p>
-                </div>
-
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">REACT</h2>
-                    <p class="exp-container-description">3 years Experience</p>
-                </div>
-
+            <section class="skill-title" id="skills">
+                <h1>Skills</h1>
             </section>
-            <section class="project__container">
-                <div class="projects__information">
-                    <h2 class="project__tittle">Projects</h2>
-                    <a href="#" class="project__contact">Contact me</a>
-                </div>
+            <section>
+                <div class="section-two">
+
+                    <div class="popup-card">
+                        <img src="./img/backend.png" class="popup-card-img">
+                        <div class="popup-card-content">
+                            <h2 class="popup-card-title">Frontend skills</h2>
+                            <p class="popup-card-description">very good skills to build interactive and dynamic user
+                                interfaces 💻</p>
+                        </div>
+                        <button id="btn-open-popup" class="btn-open-popup">More details</button>
+
+                    </div>
+                    <div class="popup-card">
+                        <img src="./img/coding.png" class="popup-card-img">
+                        <div class="popup-card-content">
+                            <h2 class="popup-card-title">Backend Skills</h2>
+                            <p class="popup-card-description">fundamental knowledge of backend technologies and that you
+                                find yourself efficient in designing APIs 💻</p>
+                        </div>
+                        <button id="btn-open-popup2" class="btn-open-popup">More details</button>
+                    </div>
+
+
+                    <div class="overlay" id="overlay">
+                        <div class="popup" id="popup">
+                            <a href="#" id="btn-close-popup" class="btn-close-popup"><i class="fas fa-times"></i></a>
+                            <h3>FRONTEND SKILLS</h3>
+                            <div class="skill-container">
+                                <div class="skills-dev">
+                                    <i class="fa-brands fa-html5 skill-icon" style="color: #0096e6"></i>
+                                    <div class="skill-name">HTML</div>
+                                </div>
+                                <div class="skills-dev">
+                                    <i class="fa-brands fa-css3 skill-icon" style="color: #ec6630"></i>
+                                    <div class="skill-name">CSS</div>
+                                </div>
+                                <div class="skills-dev">
+                                    <i class="fa-brands fa-js skill-icon" style="color: #eeaf4b"></i>
+                                    <div class="skill-name">JavaScript</div>
+                                </div>
+                                <div class="skills-dev">
+                                    <i class="fa-brands fa-react skill-icon" style="color: #49a6c0"></i>
+                                    <div class="skill-name">React</div>
+                                </div>
+                                <div class="skills-dev">
+                                    <i class="fa-brands fa-bootstrap skill-icon" style="color: #8311f6"></i>
+                                    <div class="skill-name">Bootstrap</div>
+                                </div>
+                            </div>
+                          
+
+                        </div>
+                    </div>
+                    <div class="overlay" id="overlay2">
+                        <div class="popup" id="popup2">
+                            <a href="#" id="btn-close-popup2" class="btn-close-popup"><i class="fas fa-times"></i></a>
+                            <h3>BACKEND SKILLS</h3>
+                            <div class="skill-container">
+                                <div class="skills-dev">
+                                    <i class="fa-solid fa-database skill-icon" style="color: #d47131"></i>
+                                    <div class="skill-name">SQL</div>
+                                </div>
+                                <div class="skills-dev">
+                                    <i class="fa-brands fa-node-js skill-icon" style="color: #8cc84b"></i>
+                                    <div class="skill-name">Node JS</div>
+                                </div>
+                                <div class="skills-dev">
+                                    <i class="fa-brands fa-node-js skill-icon" style="color: #8cc84b"></i>
+                                    <div class="skill-name">Express JS</div>
+                                </div>
+                                <div class="skills-dev">
+                                    <i class="fa-brands fa-envira skill-icon" style="color: #499d4a"></i>
+                                    <div class="skill-name">Mongodb</div>
+                                </div>
+                               
+
+                        </div>
+                    </div>
             </section>
-            <section class="third-section">
+
+            <section id="projects">
+                    <h2 class="title-project-section">Projects</h2>
+            </section>
+
+            <section class="section-three">
                
+                <div class="custom-card-img card-img"></div>
                 <div class="card">
-                    <img src="./img/images.jpg" class="card__img">
                     <div class="card-content">
-                        <h2 class="card-tittle">Design Portfolio</h2>
-                        <p class="card-description">HTML</p>
-                        <p class="card-description">CSS</p>
+                        <h2 class="card-title">EPS Dashboard 📈</h2>
+                        <p class="card-description">Our EPS courier customer dashboard is a user-friendly platform that empowers customers with quick access to shipment tracking, delivery history, and account management. Stay informed with real-time notifications, manage preferences, and enjoy the convenience of secure and personalized courier services—all at your fingertips.</p>
+                    </div>
+                    <div class="custom-description-content">
+                        <p class="custom-card-description">HTML</p>
+                        <p class="custom-card-description">CSS</p>
+                    </div>
+                    <div class="info-content">
+                        <a href="https://github.com/harold102400/eps-currier-website">Code <i class="fa-brands fa-github fa-lg"></i></a>
+                        <a href="https://harold102400.github.io/eps-currier-website/">Live Demo <i class="fa-solid fa-rocket fa-lg"></i></a>
                     </div>
                 </div>
-
+            </section>
+            <section class="section-three">
+               
+                <div class="second-custom-card-img second-card-img"></div>
                 <div class="card">
-                    <img src="./img/images.jpg" class="card__img">
                     <div class="card-content">
-                        <h2 class="card-tittle">E-LEARNING LANDING PAGE</h2>
-                        <p class="card-description">HTML</p>
-                        <p class="card-description">CSS</p>
+                        <h2 class="card-title">Clipboard landing page 🌐</h2>
+                        <p class="card-description">The Clipboard landing page is a user-friendly and visually engaging website that introduces the Clipboard application to potential users. The page boasts a modern design and is carefully optimized for various devices.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./img/images.jpg" class="card__img">
-                    <div class="card-content">
-                        <h2 class="card-tittle">TODO WEB APP</h2>
-                        <p class="card-description">HTML</p>
-                        <p class="card-description">CSS</p>
-                        <p class="card-description">JAVASCRIPT</p>
+                    <div class="custom-description-content">
+                        <p class="custom-card-description">HTML</p>
+                        <p class="custom-card-description">CSS</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./img/images.jpg" class="card__img">
-                    <div class="card-content">
-                        <h2 class="card-tittle">ENTERTAINMENT WEB APP</h2>
-                        <p class="card-description">HTML</p>
-                        <p class="card-description">CSS</p>
-                        <p class="card-description">JAVASCRIPT</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./img/images.jpg" class="card__img">
-                    <div class="card-content">
-                        <h2 class="card-tittle">MEMORY GAME</h2>
-                        <p class="card-description">HTML</p>
-                        <p class="card-description">CSS</p>
-                        <p class="card-description">JAVASCRIPT</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./img/images.jpg" class="card__img">
-                    <div class="card-content">
-                        <h2 class="card-tittle">ART GALLERY SHOWCASE</h2>
-                        <p class="card-description">HTML</p>
-                        <p class="card-description">CSS</p>
-                        <p class="card-description">JAVASCRIPT</p>
+                    <div class="info-content">
+                        <a href="https://github.com/harold102400/clipboard-landing-page-master">Code <i class="fa-brands fa-github fa-lg"></i></a>
+                        <a href="https://jade-blancmange-16a405.netlify.app/">Live Demo <i class="fa-solid fa-rocket fa-lg"></i></a>
                     </div>
                 </div>
 
@@ -156,59 +201,75 @@
         </article>
     </main>
 
-    <footer class="footer">
-            <div class="footer__description">
-                <h2 class="footer__tittle">Contact</h2>
-                <p class="footer__description">I would love to hear about your project and how I could help.
+    <footer id="contact-us">
+
+        <div class="footer-container">
+
+            <div class="footer-description">
+                <h2 class="footer-title" data-desktop="Don't be shy! Hit me up! 👉" data-tablettext="Don't be shy! Hit me up! 👇"></h2>
+                <p class="footer-description">I would love to hear about your project and how I could help.
                     Please fill in the form, and I'll get back to your as soon as
                     possible.
                 </p>
             </div>
             
-            <form class="form-registration">
-                <div class="footer-form">
-                    <label for="name" class="form-label">Name</label>
-                    <div class="form-input-container">
-                        <input type="text" class="form-input" name="name" id="name" placeholder="Enter your name">
+                
+                <div class="contact-box">
+                    <div class="right">
+                        <form action="https://formsubmit.co/haroldmontesdeoca.opx@gmail.com
+                        " id="form" method="POST">
+        
+                            <div class="form-control">
+                                <label>Full name</label>
+                                <input type="text" class="field" placeholder="Your Name" id="name" name="username" >
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error Message</small>
+                            </div>
+        
+                            <div class="form-control">
+                                <label>Enter your email</label>
+                                <input type="email" class="field" placeholder="Your Email" id="email" name="email" >
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error Message</small>
+                            </div>
+        
+                            <div class="form-control">
+                                <label>Enter your phone</label>
+                                <input type="number" class="field" placeholder="Phone number" id="phone" name="phone" >
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error Message</small>
+                            </div>
+        
+                            <div class="form-control">
+                                <label>Enter your message</label>
+                                <textarea placeholder="Message" class="field" id="message-box" name="message"></textarea>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error Message</small>
+                            </div>
+        
+                            <button type="submit" class="btn">Send</button>
+                        </form>
                     </div>
                 </div>
-
-                <div class="footer-form">
-                    <label for="email" class="form-label">Email</label>
-                    <div class="form-input-container">
-                        <input type="text" class="form-input" name="email" id="email" placeholder="Enter your email">
-                    </div>
-                </div>
-
-                <div class="footer-form">
-                    <label for="message" class="form-label">Message</label>
-                    <div class="form-input-container">
-                        <input type="text" class="form-input" name="message" id="message" placeholder="You can leave your message here..">
-                    </div>
-                </div>
-
-                <div class="form-btn">
-                    <button type="submit" class="submit-button" id="submit-button">SENT MESSAGE</button>
-                </div>
-            </form>
+        </div>
+            
          <!--    <hr> -->
-            <nav class="nav-menu">
+            <nav class="footer-nav-menu">
                 <div>
-                    <h2>haroldmontes</h2>
+                    <h2>Harold.Dev</h2>
                 </div>
     
-                <ul class="social-media">
+                <ul class="footer-social-media">
                     <li>
-                        <a href="#" class="nav-link"><img src="./img/icons8-github.svg" alt=""></a>
+                        <a href="https://github.com/harold102400/"><box-icon type='logo' name='github' size="md" animation="tada-hover" color="#fff"></box-icon></a>
                     </li>
+                    
                     <li>
-                        <a href="#" class="nav-link"><img src="./img/icons8-facebook.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link"><img src="./img/icons8-twitter(1).svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link"><img src="./img/icons8-linkedin-circled.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/harold-montes-de-oca/"><box-icon type='logo' name='linkedin' size="md" animation="tada-hover" color="#fff"></box-icon></a>
                     </li>
                 </ul>
             </nav>

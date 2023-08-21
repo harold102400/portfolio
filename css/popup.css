@@ -1,0 +1,202 @@
+
+.btn-open-popup {
+	width: 130px;
+	padding: 0.5rem 1rem;
+	background-color: #3a6beb;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+	border-radius: 5px;
+	margin: 20px 0 20px 0;
+}
+
+.btn-open-popup:hover {
+	background: #1f3c88;
+}
+
+.overlay {
+	background: rgba(0, 0, 0, .3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	font-family: 'Josefin Sans', sans-serif;
+
+	text-align: center;
+
+	padding: 50px;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+
+}
+
+.popup .btn-close-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-close-popup:hover {
+	color: #000;
+}
+
+.popup h3 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+.popup h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+}
+
+.noscroll-class {
+	overflow: hidden;
+}
+
+.skill-container {
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	justify-content: center;
+	max-width: 45rem;
+}
+
+.skills-dev {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #e5ecf2;
+	width: 10rem;
+	height: 3rem;
+	border-radius: 5px;
+	margin: 0.5rem;
+	padding: 0.1rem 0px;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.skill-icon {
+	font-size: 30px;
+}
+
+.skill-name {
+	font-size: 1rem;
+	color: #000;
+}
+
+.popup-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 20rem;
+	padding: 4rem 80px 3rem 80px;
+	margin: 1rem auto;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.popup-card-img {
+	width: 150px;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+}
+
+.popup-card-title {
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	margin: 2rem 0px 0.5rem;
+
+}
+
+.popup-card-description {
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+	color: #767676;
+	width: 12rem;
+	padding-bottom: 6rem;
+}
+
+.popup.active {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.popup.active h3 {
+	animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup.active h4 {
+	animation: entradaSubtitulo .8s ease .5s forwards;
+}
+
+.popup.active .contenedor-inputs {
+	animation: entradaInputs 1s linear 1s forwards;
+}
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 764px) {
+	.popup {
+		margin: 0 50px;
+	}
+}
